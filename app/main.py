@@ -16,7 +16,4 @@ def health_check():
         "status": "ok",
         "version": __version__
     }
-    
 
-# TODO (PROJ-101): add a /health endpoint here.
-# See the ticket for the exact response shape expected.
