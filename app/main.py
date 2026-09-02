@@ -10,5 +10,10 @@ def read_root():
     return {"message": "Hello, world!"}
 
 
-# TODO (PROJ-101): add a /health endpoint here.
-# See the ticket for the exact response shape expected.
+@app.get("/health")
+def health_check():
+    return {
+        "status": "ok",
+        "version": __version__
+    }
+
